@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.21)  10 MAR 2021 12:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.21)  10 MAR 2021 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,32 +693,32 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./670009416-Br-TB-Study-concordance.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
  [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (./670009416-Br-TB-Study.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `670009416-Br-TB-Study.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 14747 strings out of 480608
- 257018 string characters out of 5903630
+ 14739 strings out of 480608
+ 256947 string characters out of 5903630
  711597 words of memory out of 5000000
- 30355 multiletter control sequences out of 15000+600000
- 548703 words of font info for 64 fonts, out of 8000000 for 9000
+ 30353 multiletter control sequences out of 15000+600000
+ 544416 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,5n,46p,340b,723s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,5n,46p,340b,725s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on 670009416-Br-TB-Study.pdf (1 page, 20289 bytes).
+Output written on 670009416-Br-TB-Study.pdf (1 page, 20746 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
+ 23 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
  5 words of extra memory for PDF output out of 10000 (max. 10000000)
 
