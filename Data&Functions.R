@@ -91,3 +91,10 @@ for(i in 1:1000){
   sim_LRT[i] <- -2*(logLik(Mod1)-logLik(Mod2))
 }
 
+
+
+
+
+
+
+

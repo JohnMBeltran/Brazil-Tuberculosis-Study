@@ -28,3 +28,17 @@ model4 <- bam(TB ~ offset(I(log(Population))) + #Offset Pop. for Rate of TB
                 s(Poor_Sanitation,bs="cr",k=20)+
                 s(lon,lat,k=200), data=TBdata, family=poisson(link="log"))
 gam.check(model4)
+
+
+
+
+
+### Attempt Round 3
+TB ~ offset(log.pop) + Indigenous + s(Illiteracy, k = -1, bs = "cr") + 
+  s(Urbanisation, k = -1, bs = "cr") + s(Density, k = -1, bs = "cr") + 
+  s(Poverty, k = -1, bs = "cr") + s(Poor_Sanitation, k = -1, 
+   bs = "cr") + s(Unemployment, k = -1, bs = "cr") + 
+  s(Timeliness, k = -1, bs = "cr") + Year + 
+  ti(lon, lat, Year, d = c(2, 1), bs = c("tp", "cr"), k = c(50, 3))
+# Goodness of Fit [1] 0.04881175
+
