@@ -52,11 +52,15 @@ m2 <- bam(TB ~
           data = TBdata, 
           family = tw(link = "log"), method="REML")
 AIC(m2)
+gam.check(m2)
+par(mfrow=c(2,2))
+lines(seq(0,10000),seq(0,10000), col='blue')
+
 
 m1 <- gam(TB ~ 
             offset(I(log(Population/100000))) +
-            s(lon, lat, k = 100) +
-            ti(lon, lat, Year, d=c(2,1), k=c(-1, 3), bs=c('tp', 'cr'))
+            s(lon, lat, k = -1) +
+            ti(lon, lat, Year, d=c(2,1), k=c(50, 3), bs=c("tp", "tp")) +
             s(Urbanisation, bs="cr", k=-1) +
             s(Density, bs="cr", k=-1) + 
             s(Poverty, bs="cr", k=-1) + 
@@ -64,10 +68,12 @@ m1 <- gam(TB ~
             s(Unemployment, bs="cr", k=-1) + 
             s(Timeliness, bs="cr", k=-1) +
             s(Year, k=3, bs="cr") + 
+            s(Region, bs="re", k=-1)+
             Indigenous,
           data = TBdata, 
-          family = nb(link = "log"), method="REML")
-
+          family = nb(link="log"), 
+          method="REML")
+gam.check(m1)
 
 p1 <- sum(model3$edf); p2 <- sum(model1$edf)
 DM1 <- model3$deviance

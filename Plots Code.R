@@ -51,7 +51,7 @@ New2014 <- predict.bam(m2012, TBdata[TBdata$Year==2014,], type="response", se.fi
 plot(log(quantile(New2014$fit,probs=seq(0,1,0.01))),
      log(quantile(TBdata[TBdata$Year==2014,]$TB,probs=seq(0,1,0.01))),
      main="2012-Data Model predict 2014, QQ Plot")
-lines(seq(0,10, 0.01), seq(0,10,0.01))
+lines(seq(0,10000, 0.01), seq(0,10000,0.01))
 
 New2013 <- predict.bam(m2012, TBdata[TBdata$Year==2013,], type="response")
 plot(log(quantile(New2013,probs=seq(0,1,0.01))),
